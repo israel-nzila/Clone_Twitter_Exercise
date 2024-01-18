@@ -7,6 +7,7 @@ import react from '@heroicons/react'
 import Tweet from './assets/myComponentTwitter/Tweet'
 import IconSide from './assets/myComponentTwitter/IconSide'
 import SquidBar from './assets/myComponentTwitter/SquidBar'
+import WhoFollow from './assets/myComponentTwitter/WhoFollow'
 
 
 const tweet = {
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-    {/* concern the post zone */}
+      {/* concern the post zone */}
 
       <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
         <div style={{ paddingLeft: '14px' }}>
@@ -31,7 +32,7 @@ function App() {
 
           <div style={{ display: 'flex', gap: '0px', marginBottom: '30px' }}>
             <ProfilPicture src="project's pictures/Profile-Photo.png" />
-            <Post style={{ border: 'none', width: '400px', height: '60px', borderRadius: 60, marginLeft: '15px', paddingTop: '7px', background: 'black', color: "#333639", fontWeight: '400', fontSize: '24px' }} value="What's happening ?"/>
+            <Post style={{ border: 'none', width: '400px', height: '60px', borderRadius: 60, marginLeft: '15px', paddingTop: '7px', background: 'black', color: "#333639", fontWeight: '400', fontSize: '24px' }} value="What's happening ?" />
           </div>
 
           <IconsPost></IconsPost>
@@ -43,7 +44,7 @@ function App() {
         </div>
       </div>
 
-{/* concern the body zone (posts) */}
+      {/* concern the body zone (posts) */}
 
       <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
         <div style={{ display: 'flex', }}>
@@ -59,7 +60,7 @@ function App() {
         </div>
       </div>
 
-{/* concern the Left side bar */}
+      {/* concern the Left side bar */}
 
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative', marginTop: '-1119px' }}>
@@ -112,17 +113,26 @@ function App() {
         </div>
       </div>
 
-{/* concern the right side bar */}
+      {/* concern the right side bar */}
 
-      <div style={{background: 'black', width: '410px', height: '70px', position: 'relative', marginTop: '-600px', marginLeft: '70rem'}}>
-        <Post style={{height: '40px', width: '400px', borderRadius: '40px', background: '#0F1419', color: '#6E767D', fontSize: '15px', border: 'none', paddingLeft: '50px'}} value="Search Twitter"></Post>
+      <div style={{ background: 'black', width: '410px', height: '70px', position: 'relative', marginTop: '-600px', marginLeft: '70rem' }}>
+        <Post style={{ height: '40px', width: '400px', borderRadius: '40px', background: '#0F1419', color: '#6E767D', fontSize: '15px', border: 'none', paddingLeft: '50px' }} value="Search Twitter"></Post>
       </div>
-      <div style={{position: 'relative', marginLeft: '71rem', marginTop: '-55px'}}><img src="project's pictures/Search.svg" alt="" /></div>
+      <div style={{ position: 'relative', marginLeft: '71rem', marginTop: '-55px' }}><img src="project's pictures/Search.svg" alt="" /></div>
 
-      <div style={{color: 'white'}}>
-      <SquidBar></SquidBar>
-      
+      <div style={{ color: 'white' }}>
+        <SquidBar></SquidBar>
+      </div>
 
+      <div style={{ background: '#0F1419', width: '450px', height: '350px', position: 'relative', marginLeft: '70rem', borderRadius: '20px', marginTop: '15px' }}>
+        <div style={{paddingTop: '15px', paddingLeft: '10px'}}>
+          <h2 style={{ color: 'white' }}>Who to follow</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+            <WhoFollow></WhoFollow>
+            <WhoFollow></WhoFollow>
+            <WhoFollow></WhoFollow>
+          </div>
+        </div>
       </div>
     </>
   )
