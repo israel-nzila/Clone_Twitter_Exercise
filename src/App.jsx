@@ -8,6 +8,7 @@ import Tweet from './assets/myComponentTwitter/Tweet'
 import IconSide from './assets/myComponentTwitter/IconSide'
 import SquidBar from './assets/myComponentTwitter/SquidBar'
 import WhoFollow from './assets/myComponentTwitter/WhoFollow'
+import Footer from './assets/myComponentTwitter/Footer'
 
 
 const tweet = {
@@ -60,60 +61,69 @@ function App() {
         </div>
       </div>
 
+      {/* <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
+        <div style={{ display: 'flex', }}>
+          <ProfilPicture src="project's pictures/Profile-Photo(2).png" />
+          <Tweet tweet={tweet} />
+        </div>
+      </div> */}
+
       {/* concern the Left side bar */}
 
+      <div style={{ position: 'relative' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative', marginTop: '-1119px' }}>
+          <div>
+            <IconSide src="project's pictures/Twitter.svg" alt="" />
+          </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative', marginTop: '-1119px' }}>
-        <div>
-          <IconSide src="project's pictures/Twitter.svg" alt="" />
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Home.svg" alt="" />
+            <span className='legendIconSide' style={{ color: 'white', fontWeight: 'bold' }}>Home</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Home.svg" alt="" />
-          <span className='legendIconSide' style={{ color: 'white', fontWeight: 'bold' }}>Home</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Explore.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Explore</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Explore.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Explore</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Notifications.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Notifications</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Notifications.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Notifications</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Messages.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Messages</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Messages.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Messages</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Bookmarks.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Bookmarks</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Bookmarks.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Bookmarks</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Lists.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Lists</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Lists.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Lists</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/Profile.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>Profile</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/Profile.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>Profile</span>
-        </div>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <IconSide src="project's pictures/More.svg" alt="" />
+            <span style={{ color: 'white', fontWeight: 'bold' }}>More</span>
+          </div>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <IconSide src="project's pictures/More.svg" alt="" />
-          <span style={{ color: 'white', fontWeight: 'bold' }}>More</span>
-        </div>
-
-        <div>
-          <Button style={{ width: '200px', height: '40px', background: 'rgb(29, 155, 240)', borderRadius: 50, border: 'none', color: 'white' }}>Tweet</Button>
+          <div>
+            <Button style={{ width: '200px', height: '40px', background: 'rgb(29, 155, 240)', borderRadius: 50, border: 'none', color: 'white' }}>Tweet</Button>
+          </div>
         </div>
       </div>
-
+      
       {/* concern the right side bar */}
+
 
       <div style={{ background: 'black', width: '410px', height: '70px', position: 'relative', marginTop: '-600px', marginLeft: '70rem' }}>
         <Post style={{ height: '40px', width: '400px', borderRadius: '40px', background: '#0F1419', color: '#6E767D', fontSize: '15px', border: 'none', paddingLeft: '50px' }} value="Search Twitter"></Post>
@@ -125,7 +135,7 @@ function App() {
       </div>
 
       <div style={{ background: '#0F1419', width: '450px', height: '350px', position: 'relative', marginLeft: '70rem', borderRadius: '20px', marginTop: '15px' }}>
-        <div style={{paddingTop: '15px', paddingLeft: '10px'}}>
+        <div style={{ paddingTop: '15px', paddingLeft: '10px' }}>
           <h2 style={{ color: 'white' }}>Who to follow</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
             <WhoFollow></WhoFollow>
@@ -134,6 +144,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer></Footer>
+
     </>
   )
 
