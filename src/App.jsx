@@ -6,6 +6,7 @@ import ProfilPicture from './assets/myComponentTwitter/ProfilPicture'
 import react from '@heroicons/react'
 import Tweet from './assets/myComponentTwitter/Tweet'
 import IconSide from './assets/myComponentTwitter/IconSide'
+import SquidBar from './assets/myComponentTwitter/SquidBar'
 
 
 const tweet = {
@@ -14,7 +15,7 @@ const tweet = {
   likes: '22',
   comments: '345',
   date: '  7m',
-  src: "project's pictures/Img.png"
+  src: "project's pictures/Img.png",
 }
 
 
@@ -22,13 +23,15 @@ function App() {
 
   return (
     <>
+    {/* concern the post zone */}
+
       <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
         <div style={{ paddingLeft: '14px' }}>
           <h1>Home</h1>
 
           <div style={{ display: 'flex', gap: '0px', marginBottom: '30px' }}>
             <ProfilPicture src="project's pictures/Profile-Photo.png" />
-            <Post />
+            <Post style={{ border: 'none', width: '400px', height: '60px', borderRadius: 60, marginLeft: '15px', paddingTop: '7px', background: 'black', color: "#333639", fontWeight: '400', fontSize: '24px' }} value="What's happening ?"/>
           </div>
 
           <IconsPost></IconsPost>
@@ -40,6 +43,8 @@ function App() {
         </div>
       </div>
 
+{/* concern the body zone (posts) */}
+
       <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
         <div style={{ display: 'flex', }}>
           <ProfilPicture src="project's pictures/Profile-Photo(2).png" />
@@ -53,6 +58,8 @@ function App() {
           <Tweet tweet={tweet} />
         </div>
       </div>
+
+{/* concern the Left side bar */}
 
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative', marginTop: '-1119px' }}>
@@ -103,6 +110,19 @@ function App() {
         <div>
           <Button style={{ width: '200px', height: '40px', background: 'rgb(29, 155, 240)', borderRadius: 50, border: 'none', color: 'white' }}>Tweet</Button>
         </div>
+      </div>
+
+{/* concern the right side bar */}
+
+      <div style={{background: 'black', width: '410px', height: '70px', position: 'relative', marginTop: '-600px', marginLeft: '70rem'}}>
+        <Post style={{height: '40px', width: '400px', borderRadius: '40px', background: '#0F1419', color: '#6E767D', fontSize: '15px', border: 'none', paddingLeft: '50px'}} value="Search Twitter"></Post>
+      </div>
+      <div style={{position: 'relative', marginLeft: '71rem', marginTop: '-55px'}}><img src="project's pictures/Search.svg" alt="" /></div>
+
+      <div style={{color: 'white'}}>
+      <SquidBar></SquidBar>
+      
+
       </div>
     </>
   )
