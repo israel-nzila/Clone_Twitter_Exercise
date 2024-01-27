@@ -21,10 +21,10 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div>
 
 
-      <div className='m-'>
+      <div>
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/profil' element={<ProfilPage />} />
@@ -38,48 +38,48 @@ function App() {
               <IconSide src="project's pictures/Twitter.svg" alt="" />
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px'}} className='makeHover'>
               <IconSide src="project's pictures/Home.svg" alt="" />
-              <span className='legendIconSide' style={{ color: 'white', fontWeight: 'bold' }}>Home</span>
+              <Link to='/' className='legendIconSide' style={{ color: 'white', fontWeight: 'bold' }}>Home</Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Explore.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>Explore</span>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Notifications.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>Notifications</span>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Messages.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>Messages</span>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Bookmarks.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>Bookmarks</span>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Lists.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>Lists</span>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Profile.svg" alt="" />
               <Link to='/profil' style={{ color: 'white', fontWeight: 'bold' }}>Profile</Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '20px' }}>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/More.svg" alt="" />
               <span style={{ color: 'white', fontWeight: 'bold' }}>More</span>
             </div>
 
             <div>
-              <Button style={{ width: '200px', height: '40px', background: 'rgb(29, 155, 240)', borderRadius: 50, border: 'none', color: 'white' }}>Tweet</Button>
+              <Button style={{ width: '200px', height: '40px', background: 'rgb(29, 155, 240)', borderRadius: 50, border: 'none', color: 'white' }} >Tweet</Button>
             </div>
           </div>
         </div>
