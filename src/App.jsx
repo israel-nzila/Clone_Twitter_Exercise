@@ -10,7 +10,8 @@ import WhoFollow from './assets/myComponentTwitter/WhoFollow'
 import HomePage from './assets/pages/HomePage'
 import Footer from './assets/myComponentTwitter/Footer'
 import { Routes, Route, Link } from "react-router-dom"
-import ProfilPage from './assets/pages/ProfilPage'
+import ProfilPage from './assets/pages/UserProfilePage'
+import UserProfilePage from './assets/pages/UserProfilePage'
 
 
 
@@ -21,24 +22,16 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{display: 'flex', gap: '30px'}}>
 
 
-      <div>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/profil' element={<ProfilPage />} />
-          </Routes>
-        </div>
-
-        
-        <div  >
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative', marginTop: '-1119px' }}>
+        <div >
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', marginLeft: '240px', position: 'relative' }}>
             <div>
               <IconSide src="project's pictures/Twitter.svg" alt="" />
             </div>
 
-            <div style={{ display: 'flex', gap: '20px'}} className='makeHover'>
+            <div style={{ display: 'flex', gap: '20px' }} className='makeHover'>
               <IconSide src="project's pictures/Home.svg" alt="" />
               <Link to='/' className='legendIconSide' style={{ color: 'white', fontWeight: 'bold' }}>Home</Link>
             </div>
@@ -84,19 +77,26 @@ function App() {
           </div>
         </div>
 
-        
 
         <div>
-          <div style={{ background: 'black', width: '410px', height: '70px', position: 'relative', marginTop: '-600px', marginLeft: '70rem' }}>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/profil' element={<UserProfilePage />} />
+          </Routes>
+        </div>
+
+
+        <div>
+          <div style={{ background: 'black', width: '410px', height: '70px', position: 'relative'}}>
             <Post style={{ height: '40px', width: '400px', borderRadius: '40px', background: '#0F1419', color: '#6E767D', fontSize: '15px', border: 'none', paddingLeft: '50px' }} value="Search Twitter"></Post>
           </div>
-          <div style={{ position: 'relative', marginLeft: '71rem', marginTop: '-55px' }}><img src="project's pictures/Search.svg" alt="" /></div>
+          <div style={{ position: 'relative', marginTop: '-55px' }}><img src="project's pictures/Search.svg" alt="" /></div>
 
           <div style={{ color: 'white' }}>
             <SquidBar></SquidBar>
           </div>
 
-          <div style={{ background: '#0F1419', width: '450px', height: '350px', position: 'relative', marginLeft: '70rem', borderRadius: '20px', marginTop: '15px' }}>
+          <div style={{ background: '#0F1419', width: '450px', height: '350px', position: 'relative', borderRadius: '20px', marginTop: '15px' }}>
             <div style={{ paddingTop: '15px', paddingLeft: '10px' }}>
               <h2 style={{ color: 'white' }}>Who to follow</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
@@ -111,7 +111,6 @@ function App() {
         </div>
 
         
-
 
       </div>
     </>

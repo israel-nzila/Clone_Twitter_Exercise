@@ -13,13 +13,6 @@ body {
   
 };
 
-/* .ButtonHover{
-background-color: blue;
-width: 210px;
-font-size: 18px;
-
-}; */
-
 .buttonStyle{
   width: 200px;
   height: 40px;
@@ -29,12 +22,8 @@ font-size: 18px;
   color: white;
 }
 
-/* .titre {
-  color: rgb(250, 244, 244);
+.clicked{
+
+  border-bottom: 25px;
 }
 
-;
-
-.legendIconSide {
-  color: white;
-} */

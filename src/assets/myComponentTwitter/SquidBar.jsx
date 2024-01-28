@@ -15,7 +15,7 @@ export default function SquidBar() {
     return (
 
         <>
-            <div style={{ background: '#0F1419', width: '450px', height: '670px', position: 'relative', marginLeft: '70rem', borderRadius: '20px', marginTop: '15px' }}>
+            <div style={{ background: '#0F1419', width: '450px', height: '670px', position: 'relative', borderRadius: '20px', marginTop: '15px' }}>
 
                 <div style={{ paddingLeft: '20px', paddingTop: '4px' }}>
 

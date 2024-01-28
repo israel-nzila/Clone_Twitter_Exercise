@@ -14,25 +14,28 @@ const tweet = {
 
 export default function HomePage() {
 
-    return(
+    return (
 
         <>
+            <div style={{ }}>
 
-        <PostZone/>
+                <PostZone />
 
-        <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
-        <div style={{ display: 'flex', }}>
-          <ProfilPicture src="project's pictures/Profile-Photo(2).png" />
-          <Tweet tweet={tweet} />
-        </div>
-      </div>
+                <div style={{ color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
+                    <div style={{ display: 'flex', }}>
+                        <ProfilPicture src="project's pictures/Profile-Photo(2).png" style={{width: '60px', height: '60px', marginTop: '5px'}} />
+                        <Tweet tweet={tweet} />
+                    </div>
+                </div>
 
-      <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
-        <div style={{ display: 'flex', }}>
-          <ProfilPicture src="project's pictures/Profile-Photo(2).png" />
-          <Tweet tweet={tweet} />
-        </div>
-      </div>
+                <div style={{ color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
+                    <div style={{ display: 'flex', }}>
+                        <ProfilPicture src="project's pictures/Profile-Photo(2).png" style={{width: '60px', height: '60px', marginTop: '5px'}} />
+                        <Tweet tweet={tweet} />
+                    </div>
+                </div>
+
+            </div>
 
         </>
     )

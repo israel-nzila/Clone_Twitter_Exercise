@@ -1,3 +1,5 @@
+// component button
+
 export default function Button(props) {
 
     return (

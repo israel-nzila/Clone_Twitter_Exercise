@@ -9,12 +9,12 @@ export default function PostZone(){
     return(
 
         <>
-        <div style={{ marginLeft: '500px', color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
+        <div style={{  color: 'white', border: 'solid 0.1px #333639', padding: '5px ', width: '555px' }}>
         <div style={{ paddingLeft: '14px' }}>
           <h1>Home</h1>
 
           <div style={{ display: 'flex', gap: '0px', marginBottom: '30px' }}>
-            <ProfilPicture src="project's pictures/Profile-Photo.png" />
+            <ProfilPicture src="project's pictures/Profile-Photo.png" style={{width: '60px', height: '60px', marginTop: '5px'}} />
             <Post style={{ border: 'none', width: '400px', height: '60px', borderRadius: 60, marginLeft: '15px', paddingTop: '7px', background: 'black', color: "#333639", fontWeight: '400', fontSize: '24px' }} value="What's happening ?" />
           </div>
 
